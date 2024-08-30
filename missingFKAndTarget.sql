@@ -69,7 +69,7 @@ WHERE
     src_column.name LIKE '%id'
     AND src_column.name <> 'Id'
     AND src_column.system_type_id = 56 -- int data type
-    AND src_column.name IN ('SERVICE_ID', 'APPLICATION_ID', 'APPLICANT_ID', 'ENTITY_ID')
+    AND src_column.name IN ('COLUMN_NAME') -- Custom columns
 ORDER BY 
     src_table.name,
     src_column.name;
