@@ -96,7 +96,7 @@ FROM (
         src_column.name LIKE '%id'
         AND src_column.name <> 'Id'
         AND src_column.system_type_id = 56 -- int data type
-        AND src_column.name IN ('SERVICE_ID', 'APPLICATION_ID', 'APPLICANT_ID', 'ENTITY_ID')
+        AND src_column.name IN ('COLUMN_NAME')
         AND src_table.name NOT LIKE '%_backup%' 
         AND src_table.name NOT LIKE '%_bkp%'
         AND fk_columns.parent_object_id IS NULL
